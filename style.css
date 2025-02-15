@@ -1,0 +1,251 @@
+/* style.css - No changes in this version */
+/* (style.css content from previous response) */
+/* Reset & Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic Body Styles */
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+#app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Main Navigation */
+nav#main-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+nav#main-menu .lesson-btn { /* Renamed class to lesson-btn for main menu button */
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px 30px; /* Slightly larger padding */
+  font-size: 1.2em; /* Slightly larger font size */
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+nav#main-menu .lesson-btn:hover {
+  background: #45a049;
+}
+
+/* Main Content Area */
+main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-height: 400px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2em; /* Slightly larger section titles */
+  margin-bottom: 15px; /* More margin below titles */
+  border-bottom: 3px solid #ddd; /* Thicker border */
+  padding-bottom: 8px; /* More padding below border */
+}
+
+/* Lesson Section Styles */
+.lesson-section {
+  padding: 20px;
+}
+.lesson-section p {
+  font-size: 1.1em; /* Slightly larger paragraph text in lessons */
+  margin-bottom: 15px;
+  line-height: 1.7; /* Improved line height for readability */
+}
+.lesson-section h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.lesson-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Grid Container for Letters in Lessons & View Page */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Letter Card in Lessons & View Page */
+.letter-card {
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.letter-card:hover {
+  transform: scale(1.03);
+}
+/* Styles for letter cards on the view all letters page */
+.letter-card.view-page {
+  background-color: #d0f0c0; /* Soft green background for view page */
+  border-color: #a8dba8;
+}
+.letter-card.obsolete.view-page {
+  background-color: #ffe0b2; /* Soft red/orange for obsolete letters on view page */
+  border-color: #ffb74d;
+}
+.letter-card.obsolete {
+  background: #ffebee;
+  border-color: #ffcdd2;
+}
+
+/* Big Thai Letter Display in Lessons & View Page */
+.big-thai {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 5px;
+}
+.responsive-letter {
+  font-size: 2.5em;
+}
+.letter-details {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Lesson Buttons */
+button.lesson-btn { /* General lesson buttons style */
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  margin: 8px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1em;
+}
+button.lesson-btn:hover {
+  background: #1976d2;
+  transform: scale(1.02);
+}
+
+/* Specific Lesson Button Styles if needed */
+button.next-lesson-btn {
+  background-color: #4caf50; /* Example: Green for "Next" button */
+}
+button.next-lesson-btn:hover {
+  background-color: #45a049;
+}
+
+button.back-lesson-btn, button.back-main-menu-btn {
+  background-color: #ff9800; /* Example: Orange for "Back" buttons */
+}
+button.back-lesson-btn:hover, button.back-main-menu-btn:hover {
+  background-color: #f57c00;
+}
+button.quiz-lesson-btn {
+  background-color: #00bcd4; /* Example: Cyan for Quiz buttons */
+}
+button.quiz-lesson-btn:hover {
+  background-color: #00acc1;
+}
+
+
+/* Quiz Section Styles */
+.quiz-section {
+  text-align: center;
+  padding: 20px;
+}
+.quiz-question p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.quiz-counter {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+.quiz-feedback {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.quiz-btn { /* Quiz option buttons - re-using lesson-btn styles, adjust if needed */
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1.2em;
+}
+.quiz-btn:hover {
+  background: #1976d2;
+  transform: scale(1.02);
+}
+
+/* Увеличенный размер тайских символов в квизе */
+.quiz-thai {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 8em;
+  margin-bottom: 20px;
+}
+
+/* View Alphabet Page Styles */
+.view-alphabet-section {
+  padding: 20px;
+}
+
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Menu Buttons Container */
+.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade {
+  animation: fadeIn 0.5s ease-out;
+}
